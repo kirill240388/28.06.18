@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include<iostream>
 #include<time.h>
+#include<string>
 using namespace std;
 int main()
 {
@@ -91,6 +92,45 @@ int main()
 		}
 
 		
+	}
+	if (task == 4)
+	{
+		char c = 'Z';
+		cout << int(c) << endl;
+		int i = 248;
+		cout << char(i) << endl;
+		for (int i = 0; i < 256; i++)
+			cout<<i<<" " << char(i) << endl;
+	}
+	if (task == 5)
+	{
+		int a,m;
+		m = 0;
+		cin >> a;
+		while (a)
+			
+		{
+			
+
+			m = m * 10 + a % 10;
+			a /= 10;
+			
+
+		
+		}
+		cout << m << endl;
+		cout << m * 5 << endl;
+	}
+	if (task == 6)
+	{
+		char c;
+		int k = 0;
+		while (cin.get(c)) {
+			if(isalpha(c))
+			/*if (c == ' ')*/
+				k++;
+		}
+		cout << k << endl;
 	}
 		
 }
